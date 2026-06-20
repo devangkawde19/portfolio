@@ -1,9 +1,14 @@
-hireme=documentquerySelector("#hireme");
-view=documentquerySelector("#viewproject");
-hireme.addEventListener("click",function(){
-    open("#about")
+const hireme = document.querySelector("#hireme");
+const view = document.querySelector("#viewproject");
+
+hireme.addEventListener("click", function () {
+    document.querySelector("#about").scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
-view.addEventListener("click",function(){
-    open("#projects")
-});   
+view.addEventListener("click", function () {
+    document.querySelector("#projects").scrollIntoView({
+        behavior: "smooth"
+    });
+});
