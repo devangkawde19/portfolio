@@ -392,25 +392,28 @@ button:nth-child(2):hover{
         font-size:.8rem;
     }
 
-    .left-container{
-        width:100%;
-        min-height:100vh;
-        padding:120px 1rem 2rem;
-        flex-direction:column;
-        justify-content:flex-start;
-        align-items:center;
-        text-align:center;
-    }
+   .left-container{
+    width:100%;
+    min-height:100vh;
+    padding:120px 1rem 2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
 
     .right-container{
         display:none;
     }
 
-    .icons{
-        flex-direction:row;
-        gap:1rem;
-        margin-bottom:2rem;
-    }
+   .icons{
+    flex-direction:row;
+    justify-content:center;
+    gap:1.2rem;
+    margin-top:2rem;
+    margin-bottom:0;
+    order:3;
+}
 
     .icons .fa-brands{
         font-size:2rem;
